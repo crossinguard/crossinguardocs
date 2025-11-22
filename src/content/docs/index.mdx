@@ -1,40 +1,66 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: crossinguardocs
+description: The personal knowledge base for crossinguard.dev
+tableOfContents: false
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: The personal knowledge base for crossinguard.dev
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/crystal-circle-logo.svg
   actions:
-    - text: Example Guide
+    - text: Knowledge Base
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: check out crossinguard.dev
+      link: https://crossinguard.dev/
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Tool Documentation
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+	<LinkCard
+	    title="Astro | Docs"
+		href="https://docs.astro.build/en/getting-started/"
+		description="Guides, resources, and API references to help you build with Astro" />
+	<LinkCard
+	    title="Starlight | Docs"
+		href="https://starlight.astro.build/getting-started/"
+		description="Everything you need to build a stellar documentation website" />
+	<LinkCard
+	    title="Astro Icon | Docs"
+		href="https://www.astroicon.dev/getting-started/"
+		description="Icons made easy, powered by Astro" />
+</CardGrid>
+
+## CSS
+
+<CardGrid>
+    <LinkCard
+	    title="Utopia"
+		href="https://utopia.fyi/"
+		description="Elegantly scale type and space without breakpoints" />
+    <LinkCard
+	    title="RampenSau"
+		href="https://meodai.github.io/rampensau/"
+		description="Lightweight, dependency-free and blazingly fast color generation library" />
+	<LinkCard
+	    title="CUBE CSS"
+		href="https://cube.fyi/"
+		description="CSS methodology that’s orientated towards simplicity, pragmatism and consistency" />
+	<LinkCard
+	    title="Every-Layout"
+		href="https://every-layout.dev/layouts/"
+		description="CSS methodology that’s orientated towards simplicity, pragmatism and consistency" />
+	<LinkCard
+	    title="CSS Reset | Piccalilli"
+		href="https://piccalil.li/blog/a-more-modern-css-reset/"
+		description="A (more) Modern CSS Reset from Piccalilli" />
+	<LinkCard
+	    title="CSS Reset | Josh W. Comeau"
+		href="https://www.joshwcomeau.com/css/custom-css-reset/"
+		description="A Modern CSS Reset from Josh W. Comeau" />
 </CardGrid>
