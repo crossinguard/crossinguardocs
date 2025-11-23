@@ -22,21 +22,19 @@ export default defineConfig({
           href: "https://github.com/crossinguard",
         },
       ],
-      customCss: [
-        // Relative path to your custom CSS file
-        "./src/styles/custom.css",
-      ],
+      customCss: ["./src/styles/custom.css"],
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
+          label: "Coding",
+          autogenerate: { directory: "coding" },
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "Professional",
+          autogenerate: { directory: "professional" },
+        },
+        {
+          label: "Learning",
+          autogenerate: { directory: "learning" },
         },
       ],
     }),
